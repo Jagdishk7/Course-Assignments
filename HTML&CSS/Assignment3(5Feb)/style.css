@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-image: url(assets/bg.png);
+  background-size: 100% 115vh;
+  background-repeat: no-repeat;
+}
+header {
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+.logo {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  border-right: 1px solid white;
+}
+.logo img {
+  width: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+}
+
+nav ul li a {
+  margin-left: 40px;
+  font-size: 14px;
+  color: white;
+}
+
+.btn {
+  background-color: #b313e4;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.home-section section {
+  margin-top: -70px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e4e4e4;
+  line-height: 80px;
+}
+
+.home-section h1 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 800;
+}
+
+.home-section p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+#main-btn {
+  padding: 15px 30px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius :10px;;
+}
