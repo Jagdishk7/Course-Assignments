@@ -10,4 +10,5 @@ function countBtn(){
         }
     }
     console.log(count)
+    output.innerText = 'Total Vowels : ' + count;
 }
