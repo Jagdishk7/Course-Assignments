@@ -10,5 +10,6 @@ function countBtn(){
         }
     }
     console.log(count)
+    // to change text of outputBox
     output.innerText = 'Total Vowels : ' + count;
 }
