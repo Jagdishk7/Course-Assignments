@@ -11,4 +11,5 @@ for (let a = i; a >= 1; a--) {
   star += "\n";
   i--;
 }
-console.log(star);
+// console.log(star);
+document.getElementById('stars').innerText = star
