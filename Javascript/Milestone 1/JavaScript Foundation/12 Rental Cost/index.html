@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="h1">Rental Cost</div>
+            <div><input type="number" placeholder="Number of Days" id="days">
+                <select name="" id="carType">
+                    <option value="Economy">Economy</option>
+                    <option value="Midsize">Midsize</option>
+                    <option value="Luxury">Luxury</option>
+                </select></div>
+            <button id="calculate" onclick="calculateBtn()">Convert</button>
+            <h1 id="output">Total Cost</h1>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
