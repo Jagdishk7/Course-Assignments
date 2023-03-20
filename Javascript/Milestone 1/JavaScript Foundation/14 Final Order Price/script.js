@@ -2,10 +2,10 @@
 
 var cart = [];
 
-function addItem(){
-var itemName = document.getElementById('itemName').value;
-var itemCost = document.getElementById('itemCost').value;
-var quantity = document.getElementById('quantity').value;
+const addItem = () =>{
+const itemName = document.getElementById('itemName').value;
+const itemCost = document.getElementById('itemCost').value;
+const quantity = document.getElementById('quantity').value;
     let obj = {};
 
     obj.itemName = itemName;
@@ -18,7 +18,7 @@ var quantity = document.getElementById('quantity').value;
     cartView.innerText = JSON.stringify(cart);
 };
 
-function calculate(){
+const calculate = () =>{
     let totalCost = 0;
     cart.forEach((item)=>{
         totalCost += item.itemTotal;
