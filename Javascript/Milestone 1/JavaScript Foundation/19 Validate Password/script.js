@@ -9,5 +9,6 @@ const submit = () => {
   } else {
     output.innerText = "Invalid email or password!";
     output.style.color = "red";
+    return false;
   }
 };
