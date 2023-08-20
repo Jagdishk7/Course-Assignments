@@ -13,7 +13,7 @@
     --text-color: #ffcc00;
 }
 body{
-    background-image: linear-gradient(#00000080, #00000080),url(/assets/BG.png);
+    background-image: linear-gradient(#00000080, #00000080),url(../assets/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
