@@ -1,0 +1,11 @@
+{
+  "name": "starting-node.js",
+  "version": "1.0.0",
+  "description": "This is our first node.js package.json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vaibhav Prajapat",
+  "license": "ISC"
+}

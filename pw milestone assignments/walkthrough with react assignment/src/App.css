@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.personBox{
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.personBox >p>span{
+    text-decoration: underline;
+    margin: 0 4px;
+}

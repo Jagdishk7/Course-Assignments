@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Nested Objects</title>
+  </head>
+  <style>
+    .address {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.3rem;
+    }
+    .address > label {
+      font-size: 0.8rem;
+    }
+    .address > input {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <header class="nav-box">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <a href="/html/countOccurences.html">Count Occurences</a>
+          </li>
+          <li>
+            <a href="/html/uniqueItems.html">Unique Itmes</a>
+          </li>
+          <li>
+            <a href="/html/swapValues.html">Swap Values</a>
+          </li>
+          <li>
+            <a href="/html/accessSpecificElements.html"
+              >Access Specific elements</a
+            >
+          </li>
+          <li>
+            <a href="/html/minMax.html">Min Max</a>
+          </li>
+          <li>
+            <a
+              href="/html/nestedObjects.html"
+              style="border-bottom: 1px solid black"
+              >Nested Objects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-section">
+      <form class="form">
+        <h2>Nested Objects</h2>
+        <label for="name">Enter name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="inp"
+          placeholder="Enter value"
+          value="Alakh Pandey"
+        />
+        <label for="age">Enter age:</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          class="inp"
+          placeholder="Enter value"
+          value="26"
+        />
+        <fieldset class="address">
+          <label for="street">Enter street:</label>
+          <input
+            type="text"
+            name="street"
+            id="street"
+            class="inp"
+            placeholder="Enter value"
+            value="92/8 Pandey Colony"
+          />
+          <label for="city">Enter city:</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            class="inp"
+            placeholder="Enter value"
+            value="xyz"
+          />
+          <label for="state">Enter state:</label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            class="inp"
+            placeholder="Enter value"
+            value="Prayagraj"
+          />
+        </fieldset>
+
+        <button class="btn">Find</button>
+        <div class="result"></div>
+      </form>
+    </section>
+
+    <script src="../js/nestedObj.js"></script>
+  </body>
+</html>

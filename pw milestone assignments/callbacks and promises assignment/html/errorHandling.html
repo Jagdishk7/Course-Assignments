@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>String manipulation</title>
+  </head>
+  <body>
+    <header class="nav-box">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <a href="/html/doubleUsingCB.html">Count Occurences</a>
+          </li>
+          <li>
+            <a href="/html/strManipulation.html">String Manipulation</a>
+          </li>
+          <li>
+            <a href="/html/ageInDays.html">Age in Days</a>
+          </li>
+          <li>
+            <a href="/html/alphaOrder.html">Arrange in alpha order</a>
+          </li>
+          <li>
+            <a href="/html/greetingPromise.html">Greeting Promise</a>
+          </li>
+          <li>
+            <a href="/html/fetchResults.html">Fetch Results</a>
+          </li>
+          <li>
+            <a href="/html/multiReq.html">Multiple Requests</a>
+          </li>
+          <li>
+            <a href="/html/dispInBrowCons.html"
+              >Display result in browser console</a
+            >
+          </li>
+          <li>
+            <a
+              href="/html/errorHandling.html"
+              style="border-bottom: 1px solid black"
+              >Handling error</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-section">
+      <form class="form">
+        <h2>Handle the error</h2>
+        <label for="inp">Enter URL:</label>
+        <input
+          type="text"
+          name=""
+          id="inp"
+          class="inp"
+          placeholder="Enter the name"
+          value="https://jsonplaceholder.typicode.com/todos/1532435234"
+        />
+        <button class="btn">Fetch Data</button>
+        <p>Result(check the browser console):</p>
+        <div class="result"></div>
+      </form>
+    </section>
+
+    <script src="../js/fetchData.js"></script>
+  </body>
+</html>

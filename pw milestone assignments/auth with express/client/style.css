@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing-page{
+    height: 100vh;
+    background: url('./assets/bg.avif') center no-repeat;
+    background-size: 100% 120%;
+}
+
+.landing-page,.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color: #f7f7f7;
+    flex-direction: column;
+    border: 1px solid #787878;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.inp{
+    padding: .5rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 0;
+    border: 1px solid #787878;
+    border-radius: 4px;
+    outline: none;
+}
+
+.inp:focus{
+    border: 1px solid #1877f2;
+}
+
+.btn{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1877f2;
+    color: #fff;
+    margin:   5px 0;
+    cursor: pointer;
+}
+
+.btn:active{
+    scale: .98;
+}
+
+.rest{
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.span-btn{
+    color: #1877f2;
+}
+
+.img{
+    /* border: 1px solid black; */
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #ffb350;
+    box-shadow: 0 0 2px 1.5px #00014f;
+}
+
+.creds{
+    margin: 1rem 0;
+}
+
+.creds>div{
+    display: flex;
+}
+
+.creds>div>p{
+    font-weight: bold;
+    margin: 0 5px;
+}

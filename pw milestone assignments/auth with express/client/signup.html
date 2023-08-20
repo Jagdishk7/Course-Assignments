@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Instagram | Sign up</title>
+  </head>
+  <body>
+    <section class="landing-page">
+      <form class="form signUpForm">
+        <img src="./assets/logo.png" class="logo" alt="insta logo" />
+        <h4>Sign up to the app</h4>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="inp"
+          placeholder="Email address"
+          required
+        />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="inp"
+          placeholder="Full name"
+          required
+        />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          class="inp"
+          placeholder="username"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="inp"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="inp"
+          placeholder="Confirm password"
+          required
+        />
+        <input
+          type="text"
+          name="bio"
+          id="bio"
+          class="inp"
+          placeholder="Bio"
+          required
+        />
+        <button type="submit" class="btn">Sign up</button>
+
+        <p class="rest">
+          Already have an account?
+          <a href="/login.html" class="span-btn">Log in</a>
+        </p>
+      </form>
+    </section>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./signup.js"></script>
+  </body>
+</html>

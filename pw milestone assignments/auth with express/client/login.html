@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Instagram | Log in</title>
+  </head>
+  <body>
+    <section class="landing-page">
+      <form method="post" class="form" id="loginForm">
+        <img src="./assets/logo.png" class="logo" alt="insta logo" />
+        <h4>Log in to the app</h4>
+        <input
+          type="text"
+          name="username"
+          id="loginFormUsername"
+          class="inp"
+          placeholder="username"
+        />
+        <input
+          type="password"
+          name="password"
+          id="loginFormPassword"
+          class="inp"
+          placeholder="Password"
+        />
+        <button type="submit" class="btn">Log in</button>
+
+        <p class="rest">
+          Do not have an account?
+          <a href="/signup.html" class="span-btn">Sign up</a>
+        </p>
+      </form>
+    </section>
+    <script src="./login.js"></script>
+  </body>
+</html>
