@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <img src="./assets/logo.png" alt="logo" class="logo" />
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <img src="./assets/hambrger.png" alt="hambrger" class="ham" />
+      </nav>
+      <section class="contact-section">
+        <div class="form-box">
+          <h2>Contact Form</h2>
+          <form action="" class="contact-form">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <label for="msg">Message:</label>
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              class="form-control"
+              placeholder="Enter your message"
+            ></textarea>
+            <button class="btn form-btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

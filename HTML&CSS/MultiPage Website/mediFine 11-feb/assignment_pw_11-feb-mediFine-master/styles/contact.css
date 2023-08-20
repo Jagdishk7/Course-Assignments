@@ -1,0 +1,48 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+}
+
+.form-box {
+  box-shadow: 0 0 3px #000;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.6rem 0;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 576px) {
+  .form-box {
+    width: 300px;
+  }
+}

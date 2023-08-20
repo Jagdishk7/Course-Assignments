@@ -1,0 +1,217 @@
+/* ========
+    imports
+    ======== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ========
+    scrollbar styles
+    ======== */
+
+::-webkit-scrollbar {
+  background-color: #f0f4f5;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f4f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+}
+
+/* ========
+    Global styles
+    ======== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #f0f4f5;
+}
+
+.btn {
+  background-color: #20bc7e;
+  border: none;
+  border-radius: 15px;
+  color: #f0f4f5;
+}
+
+/* ========
+    navbar styles
+    ======== */
+
+.navbar,
+.nav-links,
+.landing-section,
+.notations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  transition: all 100ms linear;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background-color: #20bc7e;
+  color: #f0f4f5;
+}
+
+.ham {
+  width: 30px;
+  filter: contrast(0%);
+}
+
+/* ========
+    landing section styles
+    ======== */
+
+.landing-section {
+  width: 90%;
+  min-height: 90vh;
+  margin: auto;
+  position: relative;
+  background: url("../assets/stethoscope.png") no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column-reverse;
+}
+
+.notations {
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.notations h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.notations p {
+  color: #888888;
+}
+
+.landing-btn {
+  padding: 0.5rem 1rem;
+}
+
+.notations::before {
+  content: url("../assets/topAngle.png");
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.notations::after {
+  content: url("../assets/bottomAngle.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.model {
+  background: url("../assets/greenBox.png") no-repeat bottom;
+  background-size: 100% auto;
+  position: relative;
+  z-index: -3;
+}
+
+.model::after {
+  content: "";
+  background: url("../assets/yellowBox.png") no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 60%;
+  background-size: 100% auto;
+  z-index: -2;
+}
+
+/* .model::before {
+  background: url("../assets/greenBox.png");
+} */
+
+.avatar-img {
+  width: 400px;
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  /* opacity: 0.3; */
+}
+
+.mouse {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar,
+  .landing-section {
+    width: 80%;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .avatar-img {
+    opacity: 1;
+  }
+
+  .landing-section {
+    background-size: 70% 100%;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .landing-section {
+    flex-direction: row;
+  }
+
+  .notations {
+    text-align: left;
+    align-items: flex-start;
+    height: 40vh;
+  }
+}
