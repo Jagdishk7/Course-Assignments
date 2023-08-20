@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #111827;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar,
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  /* border: 2px solid white; */
+  height: 10vh;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.ham {
+  width: 25px;
+}
+
+.nav-links {
+  visibility: collapse;
+  width: 400px;
+}
+
+.nav-links li {
+  margin: 0 0.5rem;
+}
+.nav-links li a {
+  padding: 0 0.4rem;
+}
+.nav-links li a:hover {
+  background-color: #6868e1;
+  border-radius: 5px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  /* height: 90vh; */
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.landing-notation {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.waving-hand,
+.waving-hand-img {
+  width: 25px;
+  height: 100%;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.role {
+  color: #bcbd56;
+}
+
+.landing-img-box {
+  /* border: 2px solid white; */
+  width: 300px;
+  /* height: 100%; */
+}
+
+.landing-img {
+  width: inherit;
+}
+
+.showcase-section {
+  padding: 1rem;
+}
+
+.section-heading {
+  width: fit-content;
+  margin: auto;
+  border-bottom: 2px solid #0000fb;
+}
+
+.projects {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  width: 250px;
+  /* height: 350px; */
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card-img {
+  width: 100%;
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.social-links {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-handle {
+  width: 25px;
+  margin: 0 0.5rem;
+}
+
+.outlook {
+  width: 40px;
+}
+
+@media screen and (min-width: 550px) {
+  .ham {
+    visibility: collapse;
+  }
+  .nav-links {
+    visibility: visible;
+  }
+  .main {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .landing-img-box {
+    width: 450px;
+  }
+  .landing-notation {
+    align-items: flex-start;
+  }
+}
